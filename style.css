@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/* HEADER */
+.column {
+    float: left;
+    width: 50%;
+  }
+
+/* NAV BAR */
+.navbar {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1em;
+    display: flex;
+}
+
+.leftNavBar {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    height: 75px;    
+}
+.rightNavBar {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width: 100%;
+    height: 125px;
+}
+
+.middleLogo {
+    display: flex;
+    align-items: middle;
+    justify-content: center;
+    width: 100%;
+    height: 125px;
+}
+
+.navLinks{
+    padding: 10%;
+    color: black;
+    text-decoration: none;
+}
+
+.navLinks:hover {
+    color: #fe8572;
+    text-decoration: underline solid;
+    font-size: 1.5em;
+}
+
+#logo {
+    padding: 6%;
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+    font-weight: bold; 
+}
+
+
+/* LEFT SIDE - TEXT*/
+.leftSide {
+    background-color: #fe8572;
+    height: 650px;
+    text-align: center;
+}
+
+.mainTitle {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 8em;
+    color: white;
+    line-height: 0.8em;
+}
+
+.titles {
+    padding-top: 10%;
+}
+
+.mainDescription {
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+}
+
+
+/* RIGHT SIDE - PHOTO HEADER*/
+
+.rightSide {
+    background-color: #f1a4a4;
+    height: 650px;
+}
+
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+
+}
+
+.photoTitle {
+    width: 40%;
+}
+
+/* GET TO KNOW ME ID */
+
+#sectionHeaders {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 40%;
+    padding-bottom: 5%;
+
+}
+
+/* LEFT SIDE - portrait photo*/
+
+.leftAboutSide {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.photoAboutMe {
+    width: 65%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/* RIGHT SIDE - about me text*/
+.rightAboutSide {
+    height: 300px;
+}
+
+.backgroundSection {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4;
+    padding: 10% 10%;
+}
+
+.solidDivider {
+    margin: 17% 0 0 5%;
+    width: 25%;
+}
+
+
+/* RIGHT SIDE - PROJECT PHOTO */
+.projectRight {
+    height: 400px;
+    padding-bottom: 15%;
+}
+
+.projectPhoto {
+    width: 100%;
+}
+
+.projectPhotoContainer {
+    padding-right: 10%;
+}
+
+
+/* LEFT SIDE - PROJECT DESCRIPTION */
+.projectLeft {
+    height: 400px;
+    padding-bottom: 15%;
+
+}
+
+.titleForProject {
+    font-size: 2em;
+    font-family: 'Epilogue', sans-serif;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color: #000000;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.titleForProject:hover{
+    color:#fe8572;
+    border-color: #fe8572;
+}
+@media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+
+.projectButton {
+    text-align: center;
+}
+
+/* REVEALED DESECRIPTION*/
+
+#revealDescriptionTribute {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4;
+    padding: 10%;
+
+}
+
+#revealDescriptionCeramics {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4;
+    padding: 10%;
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: #fff8f4;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto; 
+    display: block;
+    padding: 5% 0;
+}
+
+.contactArea {
+    font-family: 'Epilogue', sans-serif;
+    height: 600px;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    line-height: 1em;
+}
+
+.oneLineInput {
+    width: 85%;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+#largerText {
+    width: 85%;
+    height: 95px;
+    font-size: 25px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.contactSection {
+    text-align: center;
+    padding: 5%;
+}
+
+.nameDiv {
+    padding-bottom: 5%;
+}
+
+.emailDiv {
+    padding-bottom: 5%;
+}
+
+.buttonArea {
+    padding-bottom: 3%;
+    padding-top: 3%; 
+
+}
+
+.buttonSend {
+    text-align: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    width: 85%;
+    height: 50px;
+    text-align: center;
+}
+
+.buttonSend:hover{
+    color:#fe8572;
+    border-color: #fe8572;
+}
