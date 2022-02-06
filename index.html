@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:wght@400;600&family=Epilogue:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+
+    <body>
+        <section class = "navigationBar">
+            <div class = "navbar">
+                <div class = "leftNavBar">
+                    <a class = "navLinks" href="">Home</a>
+                    <a class = "navLinks" href ="#projects">Projects</a>
+                </div>
+    
+                <div class = "middleLogo">
+                    <a id = "logo">KC</a>
+                </div>
+    
+    
+                <div class = "rightNavBar">
+                    <a class = "navLinks" href ="">Contact</a>
+                    <a class = "navLinks" href="#about">About</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="container">
+            <div class ="row">
+                <div class = "column">
+                    <div class = "leftSide">
+                        <div class = "titles">
+                            <h1 class = "mainTitle">kristen</h1>
+                            <h1 class = "mainTitle">cadacio</h1>
+                        </div>
+                        <p class= "mainDescription"> a software engineer in the making </p>
+                    </div>
+                </div>
+    
+                <div class= "column">
+                    <div class = "rightSide">
+                        <div class = "photoContainer">
+                            <img class="photoTitle" src = "photos/webpage-photo.jpg">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class = "moreAboutMe" id = "about">
+            <h1 class = "aboutMeHeader" id = "sectionHeaders">get to know me</h1>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "leftAboutSide">
+                    <img class="photoAboutMe" src = "photos/portrait-photo.jpg">
+                </div>
+            </div>
+
+            <div>
+                <div class = "column">
+                    <div class = "rightAboutSide">
+                        <hr class="solidDivider">
+                        <p class = backgroundSection>I graduated from Syracuse University and studied television, radio, and film
+                            for the last thirteen years I've worked in reality television producing various content and project managing
+                             for networks such as VH1, MTV, HGTV, and A&E. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class = "moreAboutMe">
+    <h1 id = "sectionHeaders">my projects</h1>
+</div>
+
+<section class = "container" id="projects">
+    <div class = "row">
+        <div class = "column">
+            <div class = "projectLeft">
+                <div class = "projectTitles">
+                    <div class = "projectButton">
+                        <button id="tributeProject" class = "titleForProject">Tribute Landing Page</button>
+                    </div>
+
+                    <div id = "projectDescription">
+                        <p id = "revealDescriptionTribute"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "column">
+            <div class = "projectRight">
+                <div class = "projectPhotoContainer">
+                    <img class = "projectPhoto" src = "photos/project-bourdain.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "container">
+    <div class = "row">
+        <div class = "column">
+            <div class = "projectLeft">
+                <div class = "projectTitles">
+                    <div class = "projectButton">
+                        <button id="commerceProject" class = "titleForProject">Ceramics Page</button>
+                    </div>
+
+                    <div id = "projectDescription2">
+                        <p id = "revealDescriptionCeramics"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "column">
+            <div class = "projectRight">
+                <div class = "projectPhotoContainer">
+                    <img class = "projectPhoto" src = "photos/project-ceramics-1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class = "contactMe">
+    <h1 id = "sectionHeaders">say hello!</h1>
+</div>
+
+
+<section class = "contact" id = "contact">
+    <form>
+        <div class = "contactArea">
+            <div class = "contactSection">
+                <div class ="contactLabels">
+                    <div class = "nameDiv">
+                        <label id = "oneLine1" for="name">NAME</label><br>
+                        <input class="oneLineInput" type="text" id = "name" name = "name"><br>
+                    </div>
+                    <div class = "emailDiv">
+                        <label id = "oneLine" for = "email">EMAIL</label><br>
+                        <input class="oneLineInput" type="text" id = "email" name="email"> <br>
+                    </div>
+                </div>
+                <label class = "textArea" for = "message">MESSAGE</label><br>
+                <input id="largerText" type="text" id="message" name = "message"><br>
+                <div class = "buttonArea">
+                    <button class = "buttonSend">SEND MESSAGE</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</section>
+
+
+
+
+
+
+        
+        <script src="index.js"></script>
+    </body>
+</html>
+
