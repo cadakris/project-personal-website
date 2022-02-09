@@ -1,15 +1,25 @@
+/* NOTE - this piece of code was to get ride of the margins */
 * {
     margin: 0;
     padding: 0;
     }
 
-/* HEADER */
-.column {
-    float: left;
-    width: 50%;
-  }
 
 /* NAV BAR */
+#logo {
+    padding: 6%;
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5em;
+    font-weight: bold; 
+}
+
+#navBarDiv {
+    justify-content: center;
+    width: 100%;
+    height: 125px;  
+    display: flex;  
+}
+
 .navbar {
     font-family: 'Epilogue', sans-serif;
     font-size: 1em;
@@ -17,26 +27,14 @@
 }
 
 .leftNavBar {
-    display: flex;
     align-items: left;
-    justify-content: center;
-    width: 100%;
-    height: 75px;    
 }
 .rightNavBar {
-    display: flex;
     align-items: right;
-    justify-content: center;
-    width: 100%;
-    height: 125px;
 }
 
 .middleLogo {
-    display: flex;
     align-items: middle;
-    justify-content: center;
-    width: 100%;
-    height: 125px;
 }
 
 .navLinks{
@@ -51,224 +49,243 @@
     font-size: 1.5em;
 }
 
-#logo {
-    padding: 6%;
-    font-family: 'Sacramento', cursive;
-    font-size: 3em;
-    font-weight: bold; 
+
+/* HEADER SECTION */
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+
 }
 
+/* HEADER SECTION - LEFT SIDE */
 
-/* LEFT SIDE - TEXT*/
-.leftSide {
+.leftSideHeader {
+    display:flex;
     background-color: #fe8572;
-    height: 650px;
+    width: 50%;
+    height: 750px;
+    justify-content: center;
+    align-items: center;   
+}
+
+.headerTextContainer {
     text-align: center;
 }
 
-.mainTitle {
+.headerTitle {
     font-family: 'Epilogue', sans-serif;
-    font-size: 8em;
-    color: white;
-    line-height: 0.8em;
+    font-size: 7.5em;
+    color:white;
+    line-height: .85em;
 }
 
-.titles {
-    padding-top: 10%;
-}
-
-.mainDescription {
+.headerDescription {
     font-family: 'Sacramento', cursive;
     font-size: 3em;
+    padding-top: 5%;
 }
 
+/*HEADER SECTION - RIGHT SIDE */
 
-/* RIGHT SIDE - PHOTO HEADER*/
-
-.rightSide {
+.rightSideHeader {
     background-color: #f1a4a4;
-    height: 650px;
+    width: 50%;
 }
 
 .photoContainer {
     display: flex;
     justify-content: center;
-    height: 600px;
     align-items: center;
-
+    height: 750px;
 }
 
-.photoTitle {
-    width: 40%;
+.headerPhoto {
+    width: 45%;
 }
 
-/* GET TO KNOW ME ID */
-
-#sectionHeaders {
-    font-family: 'Sacramento', cursive;
-    font-size: 3.5em;
+/* SECTIONED AREA */
+.sections {
+    font-family: 'Sacramento',cursive;
+    font-size: 2.5em;
     text-align: center;
-    padding-top: 40%;
-    padding-bottom: 5%;
-
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-/* LEFT SIDE - portrait photo*/
-
-.leftAboutSide {
-    height: 300px;
+/* CONTAINER - ABOUT */
+.container-about {
     display: flex;
+    height: 500px;
+}
+
+/* ABOUT SECTION - LEFT SIDE */
+.leftSideAbout {
+    width: 50%;
+    }
+
+.photoContainerAbout {
+    display:flex;
+    height: 500px;
     justify-content: center;
     align-items: center;
-    padding-top: 20%;
 }
 
-.photoAboutMe {
-    width: 65%;
+.photoPortrait {
+    width: 60%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
 
-/* RIGHT SIDE - about me text*/
-.rightAboutSide {
-    height: 300px;
+/* ABOUT SECTION - RIGHT SIDE */
+.rightSideAbout {
+    width: 50%;
+    margin-top: 8%;
+
 }
 
-.backgroundSection {
+.descriptionContainerAbout {
+    display:flex;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.descriptionAboutMe {
     font-family: 'Epilogue', sans-serif;
     font-size: 1.5em;
     line-height: 1.4;
-    padding: 10% 10%;
+}
+
+.dividerContainer {
+    display: flex;
 }
 
 .solidDivider {
-    margin: 17% 0 0 5%;
-    width: 25%;
-}
-
-
-/* RIGHT SIDE - PROJECT PHOTO */
-.projectRight {
-    height: 400px;
-    padding-bottom: 15%;
-}
-
-.projectPhoto {
-    width: 100%;
-}
-
-.projectPhotoContainer {
-    padding-right: 10%;
-}
-
-
-/* LEFT SIDE - PROJECT DESCRIPTION */
-.projectLeft {
-    height: 400px;
-    padding-bottom: 15%;
+    width: 30%;
+    margin-bottom: 6%;
 
 }
 
-.titleForProject {
-    font-size: 2em;
+/* PROJECTS - TRIBUTE HEADER */
+.container-projects {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+}
+
+/* PROJECTS - LEFT SIDE */
+
+.leftSideProject {
+    width: 50%
+}
+
+.projectButton {
+    font-size: 5em;
     font-family: 'Epilogue', sans-serif;
     display:inline-block;
-    padding:0.35em 1.2em;
-    margin:0 0.3em 0.3em 0;
+    padding:1%;
+    margin: 0 2%;
     box-sizing: border-box;
     text-decoration:none;
     font-weight:300;
-    color: #000000;
+    color: black;
     text-align:center;
     transition: all 0.2s;
     background-color: white;
 }
 
-.titleForProject:hover{
-    color:#fe8572;
-    border-color: #fe8572;
-}
-@media all and (max-width:30em){
-    a.button1{
-    display:block;
-    margin:0.4em auto;
-    }
+.projectButton:hover {
+    color: #f1a4a4;
+    border-color: #f1a4a4;
 }
 
-.projectButton {
-    text-align: center;
+.descriptionContainerProject {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
 }
-
-/* REVEALED DESECRIPTION*/
 
 #revealDescriptionTribute {
     font-family: 'Epilogue', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.4;
-    padding: 10%;
+    font-size: 2em;
 
 }
 
 #revealDescriptionCeramics {
     font-family: 'Epilogue', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.4;
-    padding: 10%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* PROJECTS -  RIGHT SIDE */
+
+.rightSideProject {
+    width: 50%;
+}
+
+.photoContainerProject {
+    display:flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectPhoto {
+    width: 90%;
+    display: flex;
 }
 
 /* CONTACT */
 
-.contact {
-    background-color: #fff8f4;
-}
-
-form {
-    width: 70%;
-    margin: 0 auto; 
-    display: block;
-    padding: 5% 0;
-}
-
-.contactArea {
-    font-family: 'Epilogue', sans-serif;
-    height: 600px;
-    background-color: white;
+.contact-section {
+    height: 500px;
+    margin: 3% 18%;
+    display:flex;
     border-style: solid;
     border-width: thin;
-    line-height: 1em;
+}
+
+.form-section {
+    margin: 5%;
+    width: 95%;
+    display:inline-block
+}
+
+#label {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.2em;
+    padding-left: 2%;
 }
 
 .oneLineInput {
-    width: 85%;
-    height: 50px;
-    font-size: 25px;
+    width: 98%;
+    height: 45px;
+
+}
+
+#label-message {
     font-family: 'Epilogue', sans-serif;
-}
-
-#largerText {
-    width: 85%;
-    height: 95px;
-    font-size: 25px;
-    font-family: 'Epilogue', sans-serif;
-}
-
-.contactSection {
-    text-align: center;
-    padding: 5%;
-}
-
-.nameDiv {
-    padding-bottom: 5%;
+    font-size: 1.2em;
+    padding-left: 1%;
 }
 
 .emailDiv {
-    padding-bottom: 5%;
+    float:left;
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-.buttonArea {
-    padding-bottom: 3%;
-    padding-top: 3%; 
-
+.nameDiv {
+    display: inline-block;
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .buttonSend {
@@ -277,12 +294,29 @@ form {
     font-size: 1.5em;
     font-weight: bold;
     background-color: white;
-    width: 85%;
-    height: 50px;
+    width: 100%;
     text-align: center;
-}
+    margin-top: 5%;
+
 
 .buttonSend:hover{
     color:#fe8572;
     border-color: #fe8572;
+}
+
+input[type="text"] {
+    font-size: 20px;
+}
+
+
+textArea[type="text"] {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+textArea {
+    flex-basis: 100%;
+    max-width: 99%;
+    width: 99%;
+    min-height: 40px;
 }

@@ -1,7 +1,7 @@
-var newDescriptionTribute = document.getElementById("tributeProject");
+var newDescriptionTribute = document.getElementById("tributeButton");
     newDescriptionTribute.addEventListener("click",changeDescription);
 
-var newDescriptionCeramics = document.getElementById("commerceProject");    
+var newDescriptionCeramics = document.getElementById("ceramicsButton");    
     newDescriptionCeramics.addEventListener("click", changeDescription);
 
 
@@ -15,9 +15,9 @@ function changeDescription () {
 
 
 
-const button = document.getElementById('tributeProject')
+const button = document.getElementById('tributeButton')
 button.onclick = function () {
-    var div = document.getElementById('projectDescription');
+    var div = document.getElementById('revealDescriptionTribute');
     if (div.style.display !== 'none') {
         div.style.display = 'none';
     } else {
@@ -26,9 +26,9 @@ button.onclick = function () {
 };
 
 
-const button2 = document.getElementById('commerceProject')
+const button2 = document.getElementById('ceramicsButton')
 button2.onclick = function () {
-    var div2 = document.getElementById('projectDescription2');
+    var div2 = document.getElementById('revealDescriptionCeramics');
     if (div2.style.display !== 'none') {
         div2.style.display = 'none';
     } else {

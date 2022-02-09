@@ -1,183 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <!--GOOGLE FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:wght@400;600&family=Epilogue:wght@100&family=Sacramento&display=swap" rel="stylesheet">
 
-    <body>
-        <section class = "navigationBar">
-            <div class = "navbar">
-                <div class = "leftNavBar">
-                    <a class = "navLinks" href="">Home</a>
-                    <a class = "navLinks" href ="#projects">Projects</a>
-                </div>
-    
-                <div class = "middleLogo">
-                    <a id = "logo">KC</a>
-                </div>
-    
-    
-                <div class = "rightNavBar">
-                    <a class = "navLinks" href ="">Contact</a>
-                    <a class = "navLinks" href="#about">About</a>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:wght@400;600&family=Epilogue:wght@100&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navigationBar">
+        <div class="navbar">
+            <div class="leftNavBar" id="navBarDiv">
+                <a class="navLinks" href="#home">Home</a>
+                <a class="navLinks" href="#sections-projects">Projects</a>
             </div>
 
-        </section>
-
-
-
-
-        <section class="container">
-            <div class ="row">
-                <div class = "column">
-                    <div class = "leftSide">
-                        <div class = "titles">
-                            <h1 class = "mainTitle">kristen</h1>
-                            <h1 class = "mainTitle">cadacio</h1>
-                        </div>
-                        <p class= "mainDescription"> a software engineer in the making </p>
-                    </div>
-                </div>
-    
-                <div class= "column">
-                    <div class = "rightSide">
-                        <div class = "photoContainer">
-                            <img class="photoTitle" src = "photos/webpage-photo.jpg">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <div class = "moreAboutMe" id = "about">
-            <h1 class = "aboutMeHeader" id = "sectionHeaders">get to know me</h1>
-        </div>
-
-        <div class = "row">
-            <div class = "column">
-                <div class = "leftAboutSide">
-                    <img class="photoAboutMe" src = "photos/portrait-photo.jpg">
-                </div>
+            <div class="middleLogo" id="navBarDiv">
+                <a id="logo">KC</a>
             </div>
 
-            <div>
-                <div class = "column">
-                    <div class = "rightAboutSide">
-                        <hr class="solidDivider">
-                        <p class = backgroundSection>I graduated from Syracuse University and studied television, radio, and film
-                            for the last thirteen years I've worked in reality television producing various content and project managing
-                             for networks such as VH1, MTV, HGTV, and A&E. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-<div class = "moreAboutMe">
-    <h1 id = "sectionHeaders">my projects</h1>
-</div>
-
-<section class = "container" id="projects">
-    <div class = "row">
-        <div class = "column">
-            <div class = "projectLeft">
-                <div class = "projectTitles">
-                    <div class = "projectButton">
-                        <button id="tributeProject" class = "titleForProject">Tribute Landing Page</button>
-                    </div>
-
-                    <div id = "projectDescription">
-                        <p id = "revealDescriptionTribute"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class = "column">
-            <div class = "projectRight">
-                <div class = "projectPhotoContainer">
-                    <img class = "projectPhoto" src = "photos/project-bourdain.jpg">
-                </div>
+            <div class="rightNavBar" id="navBarDiv">
+                <a class="navLinks" href="#sections-sayhello">Contact</a>
+                <a class="navLinks" href="#sections-about">About</a>
             </div>
         </div>
     </div>
-</section>
 
-<section class = "container">
-    <div class = "row">
-        <div class = "column">
-            <div class = "projectLeft">
-                <div class = "projectTitles">
-                    <div class = "projectButton">
-                        <button id="commerceProject" class = "titleForProject">Ceramics Page</button>
-                    </div>
-
-                    <div id = "projectDescription2">
-                        <p id = "revealDescriptionCeramics"></p>
-                    </div>
-                </div>
+    <div class="container-header" id="home">
+        <div class="leftSideHeader">
+            <div class="headerTextContainer">
+                <h1 class="headerTitle">kristen <br>cadacio</h1>
+                <p class="headerDescription">software engineer</p>
             </div>
         </div>
-
-        <div class = "column">
-            <div class = "projectRight">
-                <div class = "projectPhotoContainer">
-                    <img class = "projectPhoto" src = "photos/project-ceramics-1.jpg">
-                </div>
+        <div class="rightSideHeader">
+            <div class="photoContainer">
+                <img class="headerPhoto" src="photos/webpage-photo.jpg">
             </div>
         </div>
     </div>
-</section>
 
-<div class = "contactMe">
-    <h1 id = "sectionHeaders">say hello!</h1>
-</div>
+    <div class="sections" id="sections-about">
+        <h1>get to know me</h1>
+    </div>
 
-
-<section class = "contact" id = "contact">
-    <form>
-        <div class = "contactArea">
-            <div class = "contactSection">
-                <div class ="contactLabels">
-                    <div class = "nameDiv">
-                        <label id = "oneLine1" for="name">NAME</label><br>
-                        <input class="oneLineInput" type="text" id = "name" name = "name"><br>
-                    </div>
-                    <div class = "emailDiv">
-                        <label id = "oneLine" for = "email">EMAIL</label><br>
-                        <input class="oneLineInput" type="text" id = "email" name="email"> <br>
-                    </div>
-                </div>
-                <label class = "textArea" for = "message">MESSAGE</label><br>
-                <input id="largerText" type="text" id="message" name = "message"><br>
-                <div class = "buttonArea">
-                    <button class = "buttonSend">SEND MESSAGE</button>
-                </div>
-
+    <div class="container-about" id="aboutMe">
+        <div class="leftSideAbout">
+            <div class="photoContainerAbout">
+                <img class="photoPortrait" src="photos/portrait-photo.jpg">
             </div>
         </div>
-    </form>
-</section>
+
+        <div class="rightSideAbout">
+            <div class="descriptionContainerAbout">
+                <hr class="solidDivider">
+                <p class="descriptionAboutMe">I graduated from Syracuse University and studied television, radio,
+                    and filmfor the last thirteen years I've worked in reality television producing various content and
+                    project managing for networks such as VH1, MTV, HGTV, and A&E.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sections" id="sections-projects">
+        <h1>projects</h1>
+    </div>
+
+    <div class="container-projects" id="projects">
+        <div class="leftSideProject">
+            <div class="descriptionContainerProject">
+                <button id="tributeButton" class="projectButton">Tribute Landing Page</button>
+                <div class="revealTextDiv">
+                    <p id="revealDescriptionTribute"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightSideProject">
+            <div class="photoContainerProject">
+                <img class="projectPhoto" src="photos/project-bourdain.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-projects">
+        <div class="leftSideProject">
+            <div class="descriptionContainerProject">
+                <button id="ceramicsButton" class="projectButton">Ceramics Display Page</button>
+                <p id="revealDescriptionCeramics"></p>
+            </div>
+        </div>
+
+        <div class="rightSideProject">
+            <div class="photoContainerProject">
+                <img class="projectPhoto" src="photos/project-ceramics-1.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="sections" id="sections-sayhello">
+        <h1>say hello</h1>
+    </div>
+
+
+    <div class="contact-section" id="contact">
+        <form class="form-section">
+            <div class="nameDiv">
+                <label id="label" for="name">NAME</label><br>
+                <input id="inputArea" class="oneLineInput" type="text" name="name"><br>
+            </div>
+            <div class="emailDiv">
+                <label id="label" for="email">EMAIL</label><br>
+                <input id="inputArea" class="oneLineInput" type="text" name="email"> <br>
+            </div>
+            <div class="messageDiv">
+                <label id="label-message" for="message">MESSAGE</label><br>
+                <textarea id="messageArea" name="message" type="text"></textarea>
+            </div>
+
+            <div class="buttonArea">
+                <button class="buttonSend">SEND MESSAGE</button>
+            </div>
+
+        </form>
+    </div>
 
 
 
 
 
+    <script src="index.js"></script>
+</body>
 
-        
-        <script src="index.js"></script>
-    </body>
 </html>
-
