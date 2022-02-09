@@ -123,7 +123,7 @@
 /* ABOUT SECTION - LEFT SIDE */
 .leftSideAbout {
     width: 50%;
-    }
+}
 
 .photoContainerAbout {
     display:flex;
@@ -172,29 +172,28 @@
 /* PROJECTS - TRIBUTE HEADER */
 .container-projects {
     display: flex;
-    height: 500px;
     flex-direction: row;
 }
 
 /* PROJECTS - LEFT SIDE */
 
 .leftSideProject {
-    width: 50%
+    width: 50%;
+    height: 500px;
+    
 }
 
 .projectButton {
-    font-size: 5em;
+    font-size: 1.5em;
+    padding:.5%;
     font-family: 'Epilogue', sans-serif;
-    display:inline-block;
-    padding:1%;
-    margin: 0 2%;
     box-sizing: border-box;
     text-decoration:none;
     font-weight:300;
     color: black;
-    text-align:center;
     transition: all 0.2s;
     background-color: white;
+    width: 80%;
 }
 
 .projectButton:hover {
@@ -203,22 +202,23 @@
 }
 
 .descriptionContainerProject {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
+    text-align: center;
 }
 
 #revealDescriptionTribute {
     font-family: 'Epilogue', sans-serif;
-    font-size: 2em;
-
+    font-size: 1.5em;
+    line-height: 1.4;
+    text-align: left;
+    margin: 5% 10%;
 }
 
 #revealDescriptionCeramics {
     font-family: 'Epilogue', sans-serif;
-    font-size: 2em;
-    display: flex;
-    flex-direction: column;
+    font-size: 1.5em;
+    line-height: 1.4;
+    text-align: left;
+    margin: 5% 10%;
 }
 
 
@@ -229,15 +229,20 @@
 }
 
 .photoContainerProject {
+    width: 100%;
+    height: 100%;
     display:flex;
     height: 500px;
     justify-content: center;
     align-items: center;
+    border: solid;
+    border-width: thin;
+    margin-bottom: 2%;
 }
 
 .projectPhoto {
-    width: 90%;
-    display: flex;
+    max-width: 95%;
+    margin: 3%;
 }
 
 /* CONTACT */
@@ -297,7 +302,8 @@
     width: 100%;
     text-align: center;
     margin-top: 5%;
-
+    height: 50px;
+}
 
 .buttonSend:hover{
     color:#fe8572;
@@ -318,5 +324,5 @@ textArea {
     flex-basis: 100%;
     max-width: 99%;
     width: 99%;
-    min-height: 40px;
+    min-height: 90px;
 }
